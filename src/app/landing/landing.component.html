@@ -1,0 +1,32 @@
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h1 class="mb-4 text-center mt-5">Movie Finder</h1>
+            <div class="input-group mb-3">
+              <input [(ngModel)]="movieTitle" type="text" class="form-control" placeholder="Enter movie title..." />
+              <button (click)="search()" class="btn btn-primary">Search</button>
+            </div>
+            <div *ngIf="movieData" id="movieResult" class="card">
+              <div class="d-flex main align-items-center p-3">
+                <div class="col-md-4">
+                  <img id="moviePoster" class="card-img-top" [src]="movieData.Poster" alt="Movie Poster" />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body text-left">
+                    <h5 id="movieTitle" class="card-title text-center">{{ movieData.Title }}</h5>
+                    <p id="genre">{{ 'Genre: ' + movieData.Genre }}</p>
+                    <p id="movieYear">{{ 'Year: ' + movieData.Year }}</p>
+                    <p id="moviePlot">{{ 'About: ' + movieData.Plot }}</p>
+                    <p id="actor">{{ 'Actors: ' + movieData.Actors }}</p>
+                    <p id="director">{{ 'Director: ' + movieData.Director }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+  

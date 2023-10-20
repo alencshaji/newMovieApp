@@ -1,0 +1,20 @@
+body {
+    background-image:url("https://i.postimg.cc/XN9SCyTy/wp1896145-popcorn-wallpapers-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    height: 100vh;
+}
+#moviePoster {
+    width: 100%;
+}
+.card {
+    background-image: url("https://i.postimg.cc/nhDwy8p9/wp10674119-film-roll-wallpapers.jpg");
+}
+@media screen and (max-width: 420px) {
+         .main{
+            display: flex;
+            flex-direction: column;
+         }
+}
